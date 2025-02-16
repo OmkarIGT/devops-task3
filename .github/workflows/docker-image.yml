@@ -18,7 +18,7 @@ jobs:
       run: echo "${{ secrets.PASS }}" | docker login -u "${{ secrets.USER }}" --password-stdin
  
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag akashigt/docker-task-python-flask-webserver-3:v1
+      run: docker build . --file Dockerfile --tag omkar820/devops-task3:v1
  
     - name: Push Docker Image
-      run: docker push akashigt/docker-task-python-flask-webserver-3:v1
+      run: docker push omkar820/devops-task3:v1
